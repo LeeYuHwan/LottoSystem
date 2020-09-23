@@ -41,10 +41,10 @@ public class MinLottoNumber {
 	
 	public void NumberPrint() {
 		Arrays.sort(prediction);
-		System.out.println("¿¹»ó ¹øÈ£");
+		System.out.println("ì˜ˆìƒë²ˆí˜¸");
 		for(int i = 0; i < 5; i++) {
 	    	System.out.print(prediction[i] + " ");
 	    }
-		System.out.print("º¸³Ê½º ¹øÈ£ : " + p_bonus);
+		System.out.print("ë³´ë„ˆìŠ¤  : " + p_bonus);
 	}
 }
