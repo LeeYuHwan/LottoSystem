@@ -31,13 +31,17 @@ public class SearchLotto {
 		
 		int count = 0;
 		
+		System.out.println("역대 로또 번호");
 		for(Element content : contents) {
-			if(!content.text().equals("")) {
+			try {
 				count++;
-				int num = Integer.parseInt(content.text());
+				int num = Integer.parseInt(content.text());			
+				System.out.println(num);
 				if(count % 7 != 0) number[num - 1] += 1;
 				else if(count % 7 == 0) bonus[num - 1] += 1;
-			}			
+			}catch(Exception e) {
+				
+			}					
 		}		
 				
 		new MinLottoNumber(number, bonus);

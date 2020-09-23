@@ -41,6 +41,7 @@ public class MinLottoNumber {
 	
 	public void NumberPrint() {
 		Arrays.sort(prediction);
+		System.out.println("예상 번호");
 		for(int i = 0; i < 5; i++) {
 	    	System.out.print(prediction[i] + " ");
 	    }
